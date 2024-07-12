@@ -92,8 +92,8 @@
     font-size: 20px;
     font-weight: bold;
     position: absolute;
-    margin-top: -380px;
-    margin-left: -900px;
+    margin-top: -100px;
+   margin-left: 2px
 
 }
 
@@ -114,7 +114,7 @@
             </div>
             <div class="result">
                 <p class="output" id="output">
-                    Hellow
+                    
                 
                 </p>
                 <img src="./reading-book.png" class="backgroundimg">
@@ -129,10 +129,14 @@
                         It was created by Tim Berners-Lee and released in 1993.`,
                         css:`CSS stands for Cascading Style Sheets.
                         It is used to design webpages and control the visual appearance of HTML elements.
-                        CSS describes how HTML elements should be displayed on different devices, such as desktops, laptops, tablets, or other media.`,
+                        CSS describes how HTML elements should be displayed on different devices, 
+                        such as desktops, laptops, tablets, or other media.`,
                         javascript:`JavaScript  is use to Make pages Interactive`,
-                        java:`java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. 
-                        It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.`,
+                        java:`java is a multi-platform, object-oriented,
+                         and network-centric language that can be used as a platform in itself. 
+                        It is a fast, secure, 
+                        reliable programming language for coding everything from mobile apps and 
+                        enterprise software to big data applications and server-side technologies.`,
                         mysql: `MySQL is a widely used relational database management system (RDBMS).
                          MySQL is free and open-source.
                         MySQL is ideal for both small and large applications.`,
@@ -145,4 +149,27 @@
                         
             }
             function Search() {
+                const input_Element = document.getElementById("input");
+                const Result_Element = document.getElementById("output");
+                const word = input_Element.value  
+                const information = Dictionary[word]
+                Result_Element.innerText = information 
+            }
+            }
+    </script>
+            
+</body>
+</html>
+        
+    
+    
+    
+
+
+
+
+        
+
+
+              
           
