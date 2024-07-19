@@ -109,7 +109,7 @@
         <h1 class="Heading"> Defination Dictionary <img class="Logo" src="./book.png" alt=""></h1>
         </div>
         <div class="Input_ccontainer">
-            <input type="text" class="input" id="input">
+            <input type="text" class="input" id="input" &nbsp;>
             <img src="./search.png" class="search" onclick="Search()">
             </div>
             <div class="result">
@@ -145,15 +145,128 @@
                         node :`its a javascript Runtime which use to run Javascript on webpage or v8 javascript Enginne`, 
                         express: 'its  a web application  for node js',
                         mongodb:`it's no sql database`,
-                        netlify:'its a platform for deploying the webpages'
-                        
+                        netlify:'its a platform for deploying the webpages',
+                        exception:`exception is not an eroor in its basically a probelm, we can simply  say taht it is one kind of event which occuer's
+                        during the execution of program which interpt distrupt  the normal flow of the execution of program `,
+                        exceptionhandling:`when an exception occuers then the normal flow of execution stop then we need to provide a byepass to it
+                        then its called to exception handing byepass in the sense solution and there is only one soltion for exception handling that
+                         is try and catch ,
+                         try and catch are two diffent blcok which comes together without try catch will not work as with catch try will not work
+                         in try blcok we genrally write or pass things by which lines the exception is produced 
+                         and in catch block we give trun around solution if its not possible then we pass a good msg 
+                         hierachi of exception 
+                         try - lines which genretes exception  
+                         catch - a optimal solution or good msg 
+                         throw-  if we want to build custom exception
+                         throws- to propagates the exception
+                         finally- if we want must exceute something its doesn't matter exception ocuuer or not
+                           `,
+                        multithreading:`if two or more than two task works simultensoluy then its called to be multithredinhg we can achibve multithreding in java by two ways 
+                         by using Thrad class 
+                         and Runneble interface 
+                         Thread class: lets see how achive multithreading by thrad class 
+                         its has two imprtant method  1 start and 2 is run  start is use to start thread trigger  and run is to run thread 
+                         thrad can be a simple program 
+                         satrt and run comes together but placed diffrently  
+                         first run method job  comes and then start trigger comes
+                         its has another method liks thread.sleep current.thread set priority distroy bla etc
+                         runnable interface it has only one method that is run 
+                         its most working interface in multithreading`,
+                         datastructure:`strucureinhg data into a format or organising data into a structed format called as data structre`,
+                         serilization:`traversing a data from  one place to another by changing its origianl form and geeting back its its origanl form like how it was first its called as 
+                         serilzation `,
+                         collection:` collection its a interface in java  seriliable and cloneable are marker interface of its
+                         colltion inteface is being extend by two main classes that is 
+                         list 
+                         wehre list being  implement by three imp methods 
+                         all given below have shown methods
+                          add()  addall() remove()  removeall()   size()  contains() isEEmpty()
+
+                              Arraylist                Vector              LinkedList
+                                get()
+                         -list allow duplicate      -one task at time      -same all
+                         -insertion order maintain  -leagcy class
+                         -seraching possible        -slow
+                         -index internally maintain
+
+                         set  also being implemt by three imp methods
+
+                         -not allow duplicate         
+                         -insertion order not  maintain  
+                         -seraching not possible     
+                         -index internally not  maintain    
+                         
+                         add()  addall() remove()  removeall()   size()  contains() isEEmpty()
+                         haset()                            treeset()                       linkedhashset()
+                    - having all method which           -sorting can be done             - all same as set
+                         have in list                      same as set                       fallow insertion 
+                          same as set                                                           order
+                         `,
+                         whycollections:`when some condtion are not fullfilled by collection interface then java introdeuced a class that's name as Collections .`,
+                         collections:`map is imp interface in collections class its has also serilizable and cloneable are maeker interface for taht
+                         map and set are much simliar but diff is that map works with key value concept 
+                         like 1="rupesh" here 1 is key and rupesh is value
+                         
+                         here 
+                         -insertion maintain   along with key 
+                         -duplicate not allowed in sense of key
+                         -seraching not possible     
+                         -index internally not  maintain   
+                         it has imp method like
+                         put(key,value)  putall() remove()  removeall()   size()  contains() isEEmpty() 
+                         
+
+                         hashmap            treemap                 linkedhashmap               hashtable
+                                     -sorting with key    - insertion order mainted with key
+                    
+                         `,  
+                         advancejava:`Acutally Java is devided into two Edition  one of them is stanared edition(core java) and enterprise edition
+                          which also called as (advance java)
+advance java is a set of programming principles & techniques for building for making robest scaleble and enterprise level application
+advace java is basically used fro  tranfering data or retrving data we can to store the data in the database then a 
+technology is used called as advance java
+java provide data storage in form of stack memory heap meomery but all those are tempary datastorage 
+ which is in ram it may chances to data lose if we want to 
+a option of perment data storage we prefed advance java 
+jdbc is a bassically project is created by mysql for java for perpous of perment 
+data storage `,
+jdbc:
+`first we will have to add mysqlconnector.jar file our project  where all .class are prsent 
+then we are good to go  use those clases   
+first we use
+Connection con = DriverMaaneger.get.connection("jdbc"/"mysql"/"localhost:Mr.rupya3201,root"/)
+string Query = ""
+statement st = con.createStatement();
+resultset rs = st.execute (query)
+select query -- execute query(query)
+other query  -- execute update(query)
+
+prepared st  is replacement of the st interface both are fromm interface  
+its provide  extra features taht's provide  is placeholder and u can add multiple values  which overcome drawback of st  inteface`
+                
+
+                         
+
+
+
+
             }
             function Search() {
                 const input_Element = document.getElementById("input");
                 const Result_Element = document.getElementById("output");
                 const word = input_Element.value  
                 const information = Dictionary[word]
-                Result_Element.innerText = information 
+                Result_Element.innerText = information
+                if(information)
+                {
+                    Result_Element.innerText = information
+
+                }
+                else{
+                    Result_Element.innerText  = 'Sorry Information Not Found'
+
+                }
+                Result_Element.style.color="black"
             }
             }
             //all set
