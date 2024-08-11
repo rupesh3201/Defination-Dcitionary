@@ -4,167 +4,172 @@
 <head>
     <title> Defination Dictionary</title>
     <style>
-           .body {
+        .body {
             margin: 0px;
             padding: 0px;
         }
+
         .heading_continer {}
 
-.Heading {
+        .Heading {
 
-    margin: 0px;
-    padding: 10px;
-    text-align: center;
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    align-self: center;
-    background-color: rgb(81, 78, 78);
-    color: aliceblue;
-    position: relative;
-}
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            align-self: center;
+            background-color: rgb(81, 78, 78);
+            color: aliceblue;
+            position: relative;
+        }
 
-.Logo {
-    position: absolute;
-    height: 40px;
-    align-self: center;
-    margin-top: 5px;
-    margin-left: 20px;
-}
-.Input_ccontainer {
-    margin-top: 20px;
-    background-color: bisque;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1000px;
-    margin-left: 300px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 1px 0px rgb(59, 59, 60);
+        .Logo {
+            position: absolute;
+            height: 40px;
+            align-self: center;
+            margin-top: 5px;
+            margin-left: 20px;
+        }
 
-
-
-}
-
-.input {
-    height: 30px;
-    width: 800px;
-    border: none;
-    border-radius: 10px;
-    font-weight: 500;
-    box-shadow: 0px 0px 2px 1px rgb(55, 76, 170);
+        .Input_ccontainer {
+            margin-top: 20px;
+            background-color: bisque;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1000px;
+            margin-left: 300px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 1px 0px rgb(59, 59, 60);
 
 
-}
-.input:hover {
-    height: 30px;
-    width: 800px;
-    border: none;
-    border-radius: 30px;
-    font-weight: 500;
+
+        }
+
+        .input {
+            height: 30px;
+            width: 800px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 500;
+            box-shadow: 0px 0px 2px 1px rgb(55, 76, 170);
 
 
-}
-.search {
-    margin-left: 20px;
-    height: 40px;
-    cursor: pointer;
-}
-.search:hover {
-    margin-left: 20px;
-    height: 50px;
-    cursor: pointer;
-}
-.result {
-    margin-top: 30px;
-    background-color: rgb(238, 232, 232);
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1300px;
-    margin-left: 150px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 1px 1px rgb(91, 89, 89);
-}
+        }
 
-.output {
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    margin-top: -100px;
-   margin-left: 2px
+        .input:hover {
+            height: 30px;
+            width: 800px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 500;
 
-}
 
-.backgroundimg {
-    height: 90px;
-    margin-top: 600px;
-}
-</style>
+        }
+
+        .search {
+            margin-left: 20px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .search:hover {
+            margin-left: 20px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 30px;
+            background-color: rgb(238, 232, 232);
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1300px;
+            margin-left: 150px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 1px 1px rgb(91, 89, 89);
+        }
+
+        .output {
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            margin-top: -100px;
+            margin-left: 2px
+        }
+
+        .backgroundimg {
+            height: 90px;
+            margin-top: 600px;
+        }
+    </style>
 </head>
 
 <body class="body">
     <div class="heading_continer">
         <h1 class="Heading"> Defination Dictionary <img class="Logo" src="./book.png" alt=""></h1>
-        </div>
-        <div class="Input_ccontainer">
-            <input type="text" class="input" id="input" &nbsp;>
-            <img src="./search.png" class="search" onclick="Search()">
-            </div>
-            <div class="result">
-                <p class="output" id="output">
-                    
-                
-                </p>
-                <img src="./reading-book.png" class="backgroundimg">
-            </div>
-            <script>
-                {
-                const Dictionary =
-                {
-                        html: `HTML stands for Hyper Text Markup Language.
+    </div>
+    <div class="Input_ccontainer">
+        <input type="text" class="input" id="input" &nbsp;>
+        <img src="./search.png" class="search" onclick="Search()">
+    </div>
+    <div class="result">
+        <p class="output" id="output">
+
+
+        </p>
+        <img src="./reading-book.png" class="backgroundimg">
+    </div>
+    <script>
+        {
+            const Dictionary =
+            {
+                html: `HTML stands for Hyper Text Markup Language.
                         It is the standard markup language used to create web pages.
                         HTML provides a set of tags and attributes that define the structure and content of a webpage.
                         It was created by Tim Berners-Lee and released in 1993.`,
-                        css:`CSS stands for Cascading Style Sheets.
+                css: `CSS stands for Cascading Style Sheets.
                         It is used to design webpages and control the visual appearance of HTML elements.
                         CSS describes how HTML elements should be displayed on different devices, 
                         such as desktops, laptops, tablets, or other media.`,
-                        javascript:`JavaScript  is use to Make pages Interactive`,
-                        
-                        mysql: `MySQL is a widely used relational database management system (RDBMS).
+                javascript: `JavaScript  is use to Make pages Interactive`,
+
+                mysql: `MySQL is a widely used relational database management system (RDBMS).
                          MySQL is free and open-source.
                         MySQL is ideal for both small and large applications.`,
-                        j2ee:`The Java™ 2 Platform, Enterprise Edition (J2EE) provides a standard for developing multitier, enterprise applications. `,
-                        bootstrap: `Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.`,
-                        node :`its a javascript Runtime which use to run Javascript on webpage or v8 javascript Enginne`, 
-                        express: 'its  a web application  for node js',
-                        mongodb:`it's no sql database`,
-                        netlify:'its a platform for deploying the webpages',
-                        //java definne
-                        java:`java is a multi-platform, object-oriented,
+                j2ee: `The Java™ 2 Platform, Enterprise Edition (J2EE) provides a standard for developing multitier, enterprise applications. `,
+                bootstrap: `Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.`,
+                node: `its a javascript Runtime which use to run Javascript on webpage or v8 javascript Enginne`,
+                express: 'its  a web application  for node js',
+                mongodb: `it's no sql database`,
+                netlify: 'its a platform for deploying the webpages',
+                //java definne
+                java: `java is a multi-platform, object-oriented,
                          and network-centric language that can be used as a platform in itself. 
                         It is a fast, secure, 
                         reliable programming language for coding everything from mobile apps and 
                         enterprise software to big data applications and server-side technologies.`,
-                        // global varibale
-                        globalvariable:`Global variable are those  which accesible throughout the class intire program 
+                // global varibale
+                globalvariable: `Global variable are those  which accesible throughout the class intire program 
                         global variable is written outside the method but within class 
                         global variable is dynamic 
                         global variable is also called as class variable
                         when we want to acess variable throghout the class then we declare as global variable
                         `,
-                        //local variable
-                        loacalvariable:`Local variable are those which accesible scope limited it's scope within it's function  or its 
+                //local variable
+                loacalvariable: `Local variable are those which accesible scope limited it's scope within it's function  or its 
                         method is called to be local varibale 
                         when we want something only in it's method then make them local `,
-                        //heapmemory
-                        heapmemoroy:`heapmemory is a one of type of memory in java which is used to store the object while exection of java program 
+                //heapmemory
+                heapmemoroy: `heapmemory is a one of type of memory in java which is used to store the object while exection of java program 
                         whenever the new keyword is used means the a new heap memory is created 
                         all java classes are stored in heap meomory `,
-                        //static
-                        static:`Static is a spical Keyword in java. static menas a single copy storage
+                //static
+                static: `Static is a spical Keyword in java. static menas a single copy storage
                         static things go in a memory only onces and alwyas gives latest value and static things goes in memory before object creation 
                         
                         we can use staic with
@@ -179,8 +184,8 @@
                         local variable 
                         class
                         `,
-                        //constructor c
-                        constructor:`constructor is a important method in java  which look like exact a class name
+                //constructor c
+                constructor: `constructor is a important method in java  which look like exact a class name
                         does not have retrun type if we provide it   to retrun type it will become method 
                         whever we create object of class a constructor get automatically  called
                         if we add any construcor in our java class then jvm will not add if we did not aadd jvm wil add it's default constrour 
@@ -194,8 +199,8 @@
                         c used for memory mangement 
 
                         we can `,
-                        //oops
-                        opps:`Oops mens object orientend programing those oops concept makes java different
+                //oops
+                opps: `Oops mens object orientend programing those oops concept makes java different
                         than other languages 
                         thier are six pillor of oops concept in java those are given below 
                         
@@ -206,22 +211,30 @@
                         5)class
                         6)object
                         `,
-                        encapsulation:``,
-                        polymorphism:``,
-                        inheritannce:``,
-                        abstraction:``,
-                        this:``,
-                        super:``,
-                        interface:``,
-                        abstractclass:``,
-                        garbagecollection:``,
-                        j2ee:`j2ee`,
-                        one:`10
+                 // encasulation
+                encapsulation: `Binding up a data into a single entity Called as encapsulation.
+                its a one of most imp pillor of java which hide unnaccessary data from end user
+                java supports encapsulation by deafaults in from class ,method, and variable soo we conclude java
+                suppor's encapsulation by default 
+                but the developer want proper encasulation in java proper encasulation means restrict the end user 
+                from providing false input by providing some condtion and making global variable private .  `,
+                polymorphism: `polymorphism  is also one  the main pillor of java , one entity behaves differently at diffrent time is known as polymorphism
+                we can achieve polymorpshim by two ways
+                by overloading `,
+                inheritannce: ``,
+                abstraction: ``,
+                this: ``,
+                super: ``,
+                interface: ``,
+                abstractclass: ``,
+                garbagecollection: ``,
+                j2ee: `j2ee`,
+                one: `10
                         `,
-                    
-                        exception:`exception is not an eroor in its basically a probelm, we can simply  say taht it is one kind of event which occuer's
+
+                exception: `exception is not an eroor in its basically a probelm, we can simply  say taht it is one kind of event which occuer's
                         during the execution of program which interpt distrupt  the normal flow of the execution of program `,
-                        exceptionhandling:`when an exception occuers then the normal flow of execution stop then we need to provide a byepass to it
+                exceptionhandling: `when an exception occuers then the normal flow of execution stop then we need to provide a byepass to it
                         then its called to exception handing byepass in the sense solution and there is only one soltion for exception handling that
                          is try and catch ,
                          try and catch are two diffent blcok which comes together without try catch will not work as with catch try will not work
@@ -234,7 +247,7 @@
                          throws- to propagates the exception
                          finally- if we want must exceute something its doesn't matter exception ocuuer or not
                            `,
-                        multithreading:`if two or more than two task works simultensoluy then its called to be multithredinhg we can achibve multithreding in java by two ways 
+                multithreading: `if two or more than two task works simultensoluy then its called to be multithredinhg we can achibve multithreding in java by two ways 
                          by using Thrad class 
                          and Runneble interface 
                          Thread class: lets see how achive multithreading by thrad class 
@@ -245,10 +258,10 @@
                          its has another method liks thread.sleep current.thread set priority distroy bla etc
                          runnable interface it has only one method that is run 
                          its most working interface in multithreading`,
-                         datastructure:`strucureinhg data into a format or organising data into a structed format called as data structre`,
-                         serilization:`traversing a data from  one place to another by changing its origianl form and geeting back its its origanl form like how it was first its called as 
+                datastructure: `strucureinhg data into a format or organising data into a structed format called as data structre`,
+                serilization: `traversing a data from  one place to another by changing its origianl form and geeting back its its origanl form like how it was first its called as 
                          serilzation `,
-                         collection:` collection its a interface in java  seriliable and cloneable are marker interface of its
+                collection: ` collection its a interface in java  seriliable and cloneable are marker interface of its
                          colltion inteface is being extend by two main classes that is 
                          list 
                          wehre list being  implement by three imp methods 
@@ -275,8 +288,8 @@
                          have in list                      same as set                       fallow insertion 
                           same as set                                                           order
                          `,
-                         whycollections:`when some condtion are not fullfilled by collection interface then java introdeuced a class that's name as Collections .`,
-                         collections:`map is imp interface in collections class its has also serilizable and cloneable are maeker interface for taht
+                whycollections: `when some condtion are not fullfilled by collection interface then java introdeuced a class that's name as Collections .`,
+                collections: `map is imp interface in collections class its has also serilizable and cloneable are maeker interface for taht
                          map and set are much simliar but diff is that map works with key value concept 
                          like 1="rupesh" here 1 is key and rupesh is value
                          
@@ -292,33 +305,33 @@
                          hashmap            treemap                 linkedhashmap               hashtable
                                      -sorting with key    - insertion order mainted with key
                     
-                         `,  
-                         advancejava:`Acutally Java is devided into two Edition  one of them is stanared edition(core java) and enterprise edition
+                         `,
+                advancejava: `Acutally Java is devided into two Edition  one of them is stanared edition(core java) and enterprise edition
                           which also called as (advance java)
-advance java is a set of programming principles & techniques for building for making robest scaleble and enterprise level application
-advace java is basically used fro  tranfering data or retrving data we can to store the data in the database then a 
-technology is used called as advance java
-java provide data storage in form of stack memory heap meomery but all those are tempary datastorage 
- which is in ram it may chances to data lose if we want to 
-a option of perment data storage we prefed advance java 
-jdbc is a bassically project is created by mysql for java for perpous of perment 
-data storage `,
-jdbc:
-`first we will have to add mysqlconnector.jar file our project  where all .class are prsent 
-then we are good to go  use those clases   
-first we use
-Connection con = DriverMaaneger.get.connection("jdbc"/"mysql"/"localhost:Mr.rupya3201,root"/)
-string Query = ""
-statement st = con.createStatement();
-resultset rs = st.execute (query)
-select query -- execute query(query)
-other query  -- execute update(query)
+                        advance java is a set of programming principles & techniques for building for making robest scaleble and enterprise level application
+                        advace java is basically used fro  tranfering data or retrving data we can to store the data in the database then a 
+                        technology is used called as advance java
+                        java provide data storage in form of stack memory heap meomery but all those are tempary datastorage 
+                         which is in ram it may chances to data lose if we want to 
+                        a option of perment data storage we prefed advance java 
+                        jdbc is a bassically project is created by mysql for java for perpous of perment 
+                        data storage `,
+                jdbc:
+                    `first we will have to add mysqlconnector.jar file our project  where all .class are prsent 
+                        then we are good to go  use those clases   
+                        first we use
+                        Connection con = DriverMaaneger.get.connection("jdbc"/"mysql"/"localhost:Mr.rupya3201,root"/)
+                        string Query = ""
+                        statement st = con.createStatement();
+                        resultset rs = st.execute (query)
+                        select query -- execute query(query)
+                        other query  -- execute update(query)
 
-prepared st  is replacement of the st interface both are fromm interface  
-its provide  extra features taht's provide  is placeholder and u can add multiple values  which overcome drawback of st  inteface`
-                
+                    prepared st  is replacement of the st interface both are fromm interface  
+                    its provide  extra features taht's provide  is placeholder and u can add multiple values  which overcome drawback of st  inteface`
 
-                         
+
+
 
 
 
@@ -327,36 +340,23 @@ its provide  extra features taht's provide  is placeholder and u can add multipl
             function Search() {
                 const input_Element = document.getElementById("input");
                 const Result_Element = document.getElementById("output");
-                const word = input_Element.value  
+                const word = input_Element.value
                 const information = Dictionary[word]
                 Result_Element.innerText = information
-                if(information)
-                {
+                if (information) {
                     Result_Element.innerText = information
 
                 }
-                else{
-                    Result_Element.innerText  = 'Sorry Information Not Found'
+                else {
+                    Result_Element.innerText = 'Sorry Information Not Found'
 
                 }
-                Result_Element.style.color="black"
+                Result_Element.style.color = "black"
             }
-            }
-            //all set
+        }
+        //all set
     </script>
-            
+
 </body>
+
 </html>
-        
-    
-    
-    
-
-
-
-
-        
-
-
-              
-          
